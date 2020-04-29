@@ -1,0 +1,204 @@
+/* font-family: 'Manrope', sans-serif;
+font-family: 'Inconsolata', monospace; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Inconsolata', 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* header */
+header{
+    position: relative;
+    height: 70vh;
+    background-image: url(../img/lol-bcg-header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-text{
+    padding: 40px;
+    /* border: 2px solid white; */
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+header h1{
+    font-size: 8rem;
+}
+
+header h2{
+    margin-top: 10px;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+
+/* nav */
+.top-nav{
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    height: 11vh;
+}
+.top-nav ul{
+    list-style: none;
+}
+.top-nav li{
+    float: left;
+    width: 20%;
+}
+.top-nav a{
+    display: block;
+    font-size: 3.5rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+    margin: 10px 10px;
+    color: white;
+    transition: .2s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.top-nav a:hover{
+    border-bottom: 3px solid rgb(10, 88, 69);
+    color: rgb(10, 88, 69);
+}
+
+
+/* main */
+main{
+    background-image: url(../img/lol-bcg-blurred.jpg);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    margin: 40px auto 0 auto;
+    width: 90%;
+}
+
+section h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    margin: 2%;
+    width: 46%;
+    background-color: rgba(0, 0, 0, .4);
+    align-items: center;
+    /* float: left;
+    width: 50%; */
+}
+
+img{
+    width: 50%;
+    margin: 5%;
+}
+
+.text-container{
+    margin: 5% 3% 5% 2%;
+    width: 50%;
+}
+
+.item-name{
+    margin-bottom: 5%;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+.item-description{
+    font-family: 'Manrope';
+    color: white;
+    font-size: 2rem;
+    text-align: justify;
+    margin-right: 5%;
+}
+
+/* tactics */
+article.tactics{
+    width: 100%;
+}
+
+.text-tactics{
+    width: 100%;
+    margin: 5% 3% 5% 2%;
+}
+.tactics-description{
+    margin: 0;
+}
+
+/* contact */
+form{
+    margin: 7%;
+    color: white;
+    text-align: center;
+}
+label{
+    font-size: 2rem;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 6px auto 16px auto;
+    resize: verticaly;
+    font-size: 2rem;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(14, 126, 111);
+    color: white;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(9, 170, 149);
+  }
+
+  footer{
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20vh;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, .4);
+  }
+
+
